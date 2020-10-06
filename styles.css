@@ -13,7 +13,7 @@ html {
   --bg-color: #fff;
   --heading-color: linear-gradient(to left, #494964, #6f6f89);
   --filters: grayscale(100%);
-  --logo-filter: none;
+  --logo-filter: grayscale(100%);
 }
 
 [data-theme='dark'] {
@@ -30,6 +30,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
+  line-height: 2;
 }
 
 header {
@@ -195,28 +196,32 @@ nav {
 .projects,
 .contact {
   display: flex;
-  width: 75%;
+  width: 70%;
   margin: auto;
-  min-height: 90vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: space-around;
   color: var(--font-color);
 }
 
 .introduction {
-  flex: 1;
+  flex: 2;
+}
+
+.introduction h2 {
+  margin-top: 50px;
 }
 
 .intro-text h1 {
-  font-size: 60px;
-  font-weight: 300;
-  background: var(--heading-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--font-color);
+  font-size: 50px;
+  font-weight: 400;
+  color: rebeccapurple;
+  display: inline;
+  padding: 15px;
 }
 
 .intro-text p {
+  display: inline;
   margin-top: 5px;
   font-size: 26px;
   color: var(--font-color);
