@@ -272,7 +272,7 @@ nav {
   border-radius: 20px;
   width: 100%;
   max-width: 960px;
-  height: 500px;
+  height: auto;
   box-shadow: 6px 10px 15px rgb(113, 113, 113);
   color: var(--link-color);
   display: flex;
@@ -297,10 +297,6 @@ nav {
 
 .about-pic {
   flex: 2;
-}
-
-.about-pic img {
-  border-radius: 50%;
 }
 
 .about-me p {
@@ -350,7 +346,7 @@ nav {
   background-color: #d599ff;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
-  height: 200px;
+  height: auto;
 }
 
 .project-content {
@@ -482,5 +478,129 @@ footer {
     top: 5px;
     left: 5px;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .presentation,
+  .about {
+    flex-wrap: nowrap;
+  }
+
+  .intro-text h1,
+  .about-text h1 {
+    font-size: 36px;
+  }
+
+  .intro-text p {
+    font-size: 20px;
+  }
+
+  .scroll {
+    bottom: 0px;
+  }
+
+  .projects {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  span#emoji::after {
+    content: '👉🏽';
+  }
+
+  .presentation {
+    height: 90vh;
+    margin-bottom: 4rem;
+  }
+
+  .about,
+  .projects {
+    height: auto;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .presentation {
+    flex-wrap: nowrap;
+    height: 80vh;
+  }
+
+  .intro-text h1,
+  .about-text h1 {
+    font-size: 25px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+  }
+
+  .about-about {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 659px) {
+  header {
+    position: relative;
+  }
+
+  .presentation,
+  .about {
+    height: auto;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .intro-text h1,
+  .about-text h1 {
+    font-size: 25px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .cover {
+    display: none;
+  }
+
+  span#emoji::after {
+    content: '👇🏽';
+  }
+
+  .about-about {
+    flex-direction: column;
+  }
+
+  .projects {
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .scroll {
+    display: none;
   }
 }
