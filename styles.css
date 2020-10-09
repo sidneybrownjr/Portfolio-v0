@@ -236,6 +236,10 @@ nav {
   margin: 5px;
 }
 
+span#emoji::after {
+  content: '👉🏽';
+}
+
 .contact-box h3 {
   color: rebeccapurple;
   margin-top: 50px;
@@ -245,7 +249,7 @@ nav {
 .contact-box a {
   text-decoration: none;
   color: var(--font-color);
-  padding: 10px 4px;
+  padding: 10px 0px;
   box-shadow: inset 0 -3px 0 rebeccapurple;
   transition: all 0.3s ease-in-out;
 }
@@ -503,11 +507,21 @@ footer {
   .projects {
     margin-bottom: 3rem;
   }
+
+  span#emoji::after {
+    content: '👉🏽';
+  }
+}
+
+@media screen and (max-width: 1159px) {
+  span#emoji::after {
+    content: '👇🏽';
+  }
 }
 
 @media screen and (max-width: 1024px) {
   span#emoji::after {
-    content: '👉🏽';
+    content: '👇🏽';
   }
 
   .presentation {
