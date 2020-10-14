@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --primary-color: #302ae6;
   --secondary-color: #536390;
