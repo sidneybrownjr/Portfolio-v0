@@ -344,6 +344,13 @@ span#emoji::after {
   text-align: center;
   color: var(--link-color);
   transition: 0.3s;
+  max-width: 320px;
+}
+
+.thumbnail img {
+  max-width: 280px;
+  position: relative;
+  padding: 10px;
 }
 
 .project:hover {
@@ -361,6 +368,7 @@ span#emoji::after {
   padding: 15px;
   background-color: rebeccapurple;
   border-radius: 0 0 10px 10px;
+  height: 350px;
 }
 
 .project-content h2 {
