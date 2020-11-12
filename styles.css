@@ -46,6 +46,7 @@ p {
 
 header {
   display: flex;
+  -webkit-box-flex: initial;
   height: 10vh;
   width: 80%;
   margin: auto;
@@ -198,7 +199,6 @@ nav {
 }
 
 .color-mode {
-  flex: 1;
   justify-content: end;
   align-items: center;
 }
@@ -264,7 +264,6 @@ span#emoji::after {
 }
 
 .cover {
-  flex: 1;
   justify-content: end;
 }
 
