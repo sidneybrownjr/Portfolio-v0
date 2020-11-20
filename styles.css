@@ -350,6 +350,7 @@ span#emoji::after {
   max-width: 280px;
   position: relative;
   padding: 10px;
+  object-fit: cover;
 }
 
 .project:hover {
