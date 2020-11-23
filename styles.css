@@ -331,6 +331,7 @@ span#emoji::after {
   font-size: 44px;
   font-weight: 400;
   background: var(--heading-color);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
