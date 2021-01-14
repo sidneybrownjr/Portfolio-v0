@@ -382,6 +382,10 @@ span#emoji::after {
   border-radius: 10%;
 }
 
+.project-content p {
+  height: 60%;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
