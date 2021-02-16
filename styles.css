@@ -283,6 +283,8 @@ span#emoji::after {
   box-shadow: 6px 10px 15px rgb(113, 113, 113);
   color: var(--link-color);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-text h1 {
@@ -613,9 +615,6 @@ footer {
 
   .about-text {
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .cover {
